@@ -71,3 +71,10 @@ export default defineConfig([
   },
 ])
 ```
+
+## GitHub Pages deployment
+
+Use Node.js 22 and `npm ci`. `npm run build` type-checks and builds `dist/`.
+The Pages workflow automatically publishes `dist/` on every push to `main`.
+Set Settings → Pages → Source to GitHub Actions.
+The Vite production base is `/Sit-With-That-Cover/`.
